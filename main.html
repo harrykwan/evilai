@@ -1,0 +1,230 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<style>
+* {
+box-sizing: border-box;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 5px;
+perspective: 1000;
+transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.column:hover{
+
+	/*transform: rotateY(180deg);*/
+	transition: transform 0s;
+}
+
+
+.column>img{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.column>img:hover{
+	opacity: 0.3;
+	filter: blur(3px);
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.photowords{
+	font-size: 30px;
+	position: fixed; 
+	top: 45%;
+	left: 0;
+	/*left: 15%;*/
+	width: 100%;
+	text-align: center;
+	color: #6a6a75;
+	/*color: #b4b4cf;*/
+	/*text-shadow: 0 0 3px black;*/
+	z-index: -1;
+	color: black;
+	opacity: 0.7;
+}
+
+
+
+
+.starttitle{
+	 text-align: left; font-size: 70px;
+}
+
+body{
+	background-color: /*#CFCFDD;*//*#E7E7E7*/#fffaf0;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.secbg{
+	background: #b4b4cf; background: #9e9eb8; width: 100%; height: 100%; position: fixed; z-index: -1; top: 30px; left: 30px;
+}
+
+.picarray{
+	width: 70%; margin-left: auto; margin-right: auto; color: #fffaf0; font-size: 25px;
+}
+
+.picarraybg{
+	background-color: #e4e4ed; padding: 20px;
+}
+
+.startpage{
+	margin-top: 80px; margin-bottom: 80px;  width: 100%; padding-top: 50px; padding-bottom: 50px;
+}
+
+.picarray2{
+	display: none;
+}
+
+.picarray2div{
+	margin-bottom: 5px;
+	padding: 4px;
+	padding-top: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+@media screen and (max-width:800px){
+	.secbg {top: 20px; left: 20px;}
+	.photowords {font-size: 15px; top: 40%;}
+	.starttitle {font-size: 40px;}
+	.picarraybg {padding: 3px;display: none;}
+	.picarray2 {display: block;}
+	.startpage {padding-top: 20px; }
+	.picarray {}
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="secbg" class="secbg" style="">
+	<img src="pic/texture1.jpg" style="width: 100%; height: 100%; opacity: .3;">
+</div>
+
+
+<!-- background: #E7E7E7; -->
+
+
+
+<div id="startpage" class="startpage" style="">
+	
+<div id="picarray" style="" class="picarray">
+	<h1 class="starttitle">EVIAN LAI</h1>
+
+	<div class="picarray2">
+		<div style="background: #afe39a" class="picarray2div">Introduction</div>
+		<div style="background: #afe39a" class="picarray2div">Inspiration</div>
+		<div style="background: #afe39a" class="picarray2div">Natural Dye</div>
+		<div style="background: #afe39a" class="picarray2div">Beading</div>
+		<div style="background: #afe39a" class="picarray2div">Blind Stitch</div>
+		<div style="background: #afe39a" class="picarray2div">CAD</div>
+		<div style="background: #afe39a" class="picarray2div">Weaving</div>
+		<div style="background: #afe39a" class="picarray2div">Collaboration</div>
+		<div style="background: #afe39a" class="picarray2div">Contact</div>
+
+	</div>
+
+	<div class="picarraybg" style="">
+
+		<div class="row" >
+
+		  <div class="column">
+		  	<div style="" class="photowords">Introduction</div>
+		    <img src="pic/1.jpeg" style="width:100%"> 
+		  </div>
+		  
+		  <div class="column">
+		  	<div style="" class="photowords">Inspiration</div>
+		    <img src="pic/2.jpeg"  style="width:100%">
+		  </div>
+		
+		  <div class="column">
+		  	<div style="" class="photowords">Natural Dye</div>
+		    <img src="pic/3.jpeg"  style="width:100%">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+		  	<div style="" class="photowords">Beading</div>
+		    <img src="pic/4.jpeg" style="width:100%">
+		  </div>
+		  <div class="column">
+		  	<div style="" class="photowords">Blind Stitch</div>
+		    <img src="pic/5.jpeg" style="width:100%">
+		  </div>
+		  <div class="column">
+		  	<div style="" class="photowords">CAD</div>
+		    <img src="pic/6.jpeg" style="width:100%">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+		  	<div style="" class="photowords">Weaving</div>
+		    <img src="pic/7.jpeg" style="width:100%">
+		  </div>
+		  <div class="column">
+		  	<div style="" class="photowords">Collaboration</div>
+		    <img src="pic/8.jpeg"  style="width:100%">
+		  </div>
+		  <div class="column">
+		  	<div style="" class="photowords">Contact</div>
+		    <img src="pic/9.jpeg" style="width:100%">
+		  </div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+
+<script type="text/javascript">
+	function startfunc() {
+		var allbox = document.getElementsByClassName('column');
+		for (var j=0; j<allbox.length; j++){
+			allbox[j].getElementsByClassName('photowords')[0].hidden = true;
+			allbox[j].onmouseover = function(){
+				this.getElementsByClassName('photowords')[0].hidden = false;
+			}
+			allbox[j].onmouseout = function(){
+				this.getElementsByClassName('photowords')[0].hidden = true;
+			}
+			allbox[j].onclick = function(){
+				nextpage(this.getElementsByClassName('photowords')[0].innerHTML);
+			}
+		}
+
+		var allbox2 = document.getElementsByClassName('picarray2div');
+		for (var j=0; j<allbox2.length; j++){
+			allbox2[j].onclick = function(){
+				nextpage(this.innerHTML);
+			}
+		}
+	}
+	startfunc();
+
+	function nextpage(x){
+		console.log(x);
+	}
+
+</script>
+
+</body>
+</html>
