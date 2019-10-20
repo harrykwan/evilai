@@ -2,18 +2,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
 * {
 box-sizing: border-box;
 }
 
 .column {
-float: left;
-width: 33.33%;
-padding: 5px;
-perspective: 1000;
-transition: transform 0.6s;
-  transform-style: preserve-3d;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	perspective: 1000;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
 }
 
 .column:hover{
@@ -71,11 +72,20 @@ body{
 }
 
 .secbg{
-	background: #b4b4cf; background: #9e9eb8; width: 100%; height: 100%; position: absolute; z-index: -1; top: 30px; left: 30px; height: 1500px;
+	background: #b4b4cf; background: #f7f0f5; width: 100%; height: 100%; position: absolute; z-index: -1; top: 30px; left: 30px; height: 1500px; opacity: 0.7;
+}
+
+.secbgborder{
+	background: none; width: 100%; height: 100%; position: absolute; z-index: -1;  height: 1500px;
+	border: 20px solid #6b6a51; opacity: .3; top: 60px; left: 60px; border-top-width: 200px;
 }
 
 .picarray{
 	width: 70%; margin-left: auto; margin-right: auto; color: #fffaf0; font-size: 25px;
+}
+
+.picarraybg{
+	background-color: #e4e4ed; padding: 20px;
 }
 
 .picarraybg{
@@ -88,6 +98,15 @@ body{
 
 .picarray2{
 	display: none;
+	position: absolute;
+	width: 200px;
+	left: -180px;
+	top: 200px;
+}
+
+.picarray2show{
+	left: 50px;
+	transition-duration: .3s;
 }
 
 .picarray2div{
@@ -98,15 +117,19 @@ body{
 	text-align: center;
 }
 
+.bg2_2{display: none;}
+
 
 @media screen and (max-width:800px){
-	.secbg {top: 20px; left: 20px;}
+	.secbg {top: 30px; left: 20px; height: 800px;}
 	.photowords {font-size: 15px; top: 40%;}
-	.starttitle {font-size: 40px;}
+	.starttitle {font-size: 40px; text-align: right; width: 200px; position: absolute; right: 30; top: 50;}
 	.picarraybg {padding: 3px;display: none;}
 	.picarray2 {display: block;}
 	.startpage {padding-top: 20px; }
 	.picarray {}
+	.secbgborder {top: 40px; left: 30px; border-width: 5px; height: 800px; border-top-width: 130px;}
+	.bg2_2{display: block;}
 }
 
 
@@ -114,85 +137,93 @@ body{
 </head>
 <body>
 
-<div id="secbg" class="secbg" style="">
-	<img src="pic/texture1.jpg" style="width: 100%; height: 100%; opacity: .3;">
-</div>
-
-
-<!-- background: #E7E7E7; -->
-
-
-
-<div id="startpage" class="startpage" style="">
-	
-<div id="picarray" style="" class="picarray">
-	<h1 class="starttitle">EVIAN LAI</h1>
-
-	<div class="picarray2">
-		<div style="background: #afe39a" class="picarray2div">Introduction</div>
-		<div style="background: #afe39a" class="picarray2div">Inspiration</div>
-		<div style="background: #afe39a" class="picarray2div">Natural Dye</div>
-		<div style="background: #afe39a" class="picarray2div">Beading</div>
-		<div style="background: #afe39a" class="picarray2div">Blind Stitch</div>
-		<div style="background: #afe39a" class="picarray2div">CAD</div>
-		<div style="background: #afe39a" class="picarray2div">Weaving</div>
-		<div style="background: #afe39a" class="picarray2div">Collaboration</div>
-		<div style="background: #afe39a" class="picarray2div">Contact</div>
-
+<div style="">
+	<div id="secbg" class="secbg" style="">
+		<img src="pic/texture1.jpg" style="width: 100%; height: 100%; opacity: .3;">
 	</div>
 
-	<div class="picarraybg" style="">
+	<img src="pic/flower.jpeg" style="width: 100%; top:0; left:0;  opacity: .5; position: fixed; z-index: -3;">
+	<img class="bg2_2" src="pic/flower.jpeg" style="width: 100%; top:500; left:0;  opacity: .5; position: fixed; z-index: -4;">
 
-		<div class="row" >
-
-		  <div class="column">
-		  	<div style="" class="photowords">Introduction</div>
-		    <img src="pic/1.jpeg" style="width:100%"> 
-		  </div>
-		  
-		  <div class="column">
-		  	<div style="" class="photowords">Inspiration</div>
-		    <img src="pic/2.jpeg"  style="width:100%">
-		  </div>
+	<div id="secbg" class="secbgborder" style="">
 		
-		  <div class="column">
-		  	<div style="" class="photowords">Natural Dye</div>
-		    <img src="pic/3.jpeg"  style="width:100%">
-		  </div>
+	</div>
+
+	<!-- background: #E7E7E7; -->
+
+
+
+	<div id="startpage" class="startpage" style="">
+		
+	<div id="picarray" style="" class="picarray">
+		<h1 class="starttitle">EVIAN LAI</h1>
+		<i onclick="showmenu()" class="material-icons" style="font-size: 40px;">menu</i>
+		<div class="picarray2" id="picarray2">
+			<div style="background: #ddd3e0" class="picarray2div">Introduction</div>
+			<div style="background: #d1b6e4" class="picarray2div">Inspiration</div>
+			<div style="background: #e4d67c" class="picarray2div">Natural Dye</div>
+			<div style="background: #bfdf8e" class="picarray2div">Beading</div>
+			<div style="background: #d1b6e4" class="picarray2div">Blind Stitch</div>
+			<div style="background: #ddd3e0" class="picarray2div">CAD</div>
+			<div style="background: #e4d67c" class="picarray2div">Weaving</div>
+			<div style="background: #bfdf8e" class="picarray2div">Collaboration</div>
+			<div style="background: #d1b6e4" class="picarray2div">Contact</div>
+
 		</div>
-		<div class="row">
-		  <div class="column">
-		  	<div style="" class="photowords">Beading</div>
-		    <img src="pic/4.jpeg" style="width:100%">
-		  </div>
-		  <div class="column">
-		  	<div style="" class="photowords">Blind Stitch</div>
-		    <img src="pic/5.jpeg" style="width:100%">
-		  </div>
-		  <div class="column">
-		  	<div style="" class="photowords">CAD</div>
-		    <img src="pic/6.jpeg" style="width:100%">
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="column">
-		  	<div style="" class="photowords">Weaving</div>
-		    <img src="pic/7.jpeg" style="width:100%">
-		  </div>
-		  <div class="column">
-		  	<div style="" class="photowords">Collaboration</div>
-		    <img src="pic/8.jpeg"  style="width:100%">
-		  </div>
-		  <div class="column">
-		  	<div style="" class="photowords">Contact</div>
-		    <img src="pic/9.jpeg" style="width:100%">
-		  </div>
+
+		<div class="picarraybg" style="">
+
+			<div class="row" >
+
+			  <div class="column">
+			  	<div style="" class="photowords">Introduction</div>
+			    <img src="pic/1.jpeg" style="width:100%"> 
+			  </div>
+			  
+			  <div class="column">
+			  	<div style="" class="photowords">Inspiration</div>
+			    <img src="pic/2.jpeg"  style="width:100%">
+			  </div>
+			
+			  <div class="column">
+			  	<div style="" class="photowords">Natural Dye</div>
+			    <img src="pic/3.jpeg"  style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			  	<div style="" class="photowords">Beading</div>
+			    <img src="pic/4.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Blind Stitch</div>
+			    <img src="pic/5.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">CAD</div>
+			    <img src="pic/6.jpeg" style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			  	<div style="" class="photowords">Weaving</div>
+			    <img src="pic/7.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Collaboration</div>
+			    <img src="pic/8.jpeg"  style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Contact</div>
+			    <img src="pic/9.jpeg" style="width:100%">
+			  </div>
+			</div>
 		</div>
 	</div>
-</div>
 
 
 
+	</div>
 </div>
 
 <script type="text/javascript">
@@ -222,6 +253,14 @@ body{
 
 	function nextpage(x){
 		console.log(x);
+	}
+
+	function showmenu() {
+		if (document.getElementById("picarray2").classList.contains('picarray2show'))
+			document.getElementById("picarray2").classList.remove('picarray2show')
+		else
+			document.getElementById("picarray2").classList.add('picarray2show')
+		
 	}
 
 </script>
