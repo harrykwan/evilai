@@ -33,7 +33,7 @@ var imglist = {
 	"Weaving" : {
 		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
 		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "asdf"
+		description: "<br>Dye 100%cotton with natural plants, <br>Coffee,Spinach,Purple Dragon Fruit,Isatidis Radix, <br> ripped into stripes,weave them into garment,is a way to convey the idea of sustainability, while it cause no damage for the planet after dissolving into soil"
 	},
 	"Collaboration" : {
 		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
