@@ -1,37 +1,436 @@
-var imglist = {
-	"Introduction" : {
-		description: "‘Seek What sets your soul on fire’<br>			<br>			A London based Hong Kong Fashion Textile designer. Studying in University the Arts of London -London college of Fashion (LCF) <br>			Fashion textile: Embroidery. <br>			Specializing in Beading and Blind stitch<br>			Having keen eye on attention to details, a touch of feminine vibe and sense of aesthetic. <br>			<br>			‘People will stare. Make it worth their While’ -Harry Winston<br>"
-	},
-	"Inspiration" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/5b/5b/41/5b5b41caefe28908f5e124c26b0f5431.jpg","https://i.pinimg.com/originals/c7/e5/07/c7e5075308961f39854a631241eb4c7e.jpg"], 
-		description: "asdf"
-	},
-	"Natural Dye" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "asdf"
-	},
-	"Beading" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "asdf"
-	},
-	"Blind Stitch" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		     "https://i.pinimg.com/originals/48/13/e1/4813e1629998d432bf75497e1ec221e6.jpg",
-		     "https://i.pinimg.com/originals/04/54/dd/0454ddb02a32b7df2a8627dba29ce9d4.jpg"], 
-		description: "asdf<br>fdsa"
-	},
-	"CAD" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "asdf"
-	},
-	"Weaving" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "<br>Dyeing 100%cotton fabric with natural plants, <br>Coffee<br>Spinach<br>Purple Dragon Fruit<br>Isatidis Radix<br>soon use the fabrice stripes to weave into garment. The whole process is seamless, which is a way to convey the idea of sustainable fashion ,the garment might fully dissolved into the soil after ages without any damage to the planet.   "
-	},
-	"Collaboration" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "asdf"
-	},
-	"Contact" : {}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="imglist.js"></script>
+<style>
+* {
+box-sizing: border-box;
 }
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	perspective: 1000;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.column:hover{
+
+	/*transform: rotateY(180deg);*/
+	transition: transform 0s;
+}
+
+
+.column>img{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.column>img:hover{
+	opacity: 0.3;
+	filter: blur(3px);
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.photowords{
+	font-size: 30px;
+	position: absolute; 
+	top: 45%;
+	left: 0;
+	/*left: 15%;*/
+	width: 100%;
+	text-align: center;
+	color: #6a6a75;
+	/*color: #b4b4cf;*/
+	/*text-shadow: 0 0 3px black;*/
+	z-index: -1;
+	color: black;
+	opacity: 0.7;
+}
+
+
+
+
+.starttitle{
+	 text-align: left; font-size: 70px;
+}
+
+body{
+	background-color: /*#CFCFDD;*//*#E7E7E7*/#fffaf0;
+	font-family: 'Josefin Sans', sans-serif;
+
+	overflow-x: hidden;
+}
+
+.secbg{
+	background: #b4b4cf; background: #f7f0f5; width: 100%; height: 100%; position: absolute; z-index: -1; top: 30px; left: 30px; height: 1500px; opacity: 0.7;
+}
+
+.secbgborder{
+	background: none; width: 100%; height: 100%; position: absolute; z-index: -1;  height: 1500px;
+	border: 20px solid #6b6a51; opacity: .3; top: 60px; left: 60px; border-top-width: 200px;
+}
+
+.picarray{
+	width: 70%; margin-left: auto; margin-right: auto; color: #fffaf0; font-size: 25px;
+	max-width: 1000px;
+}
+
+.picarraybg{
+	background-color: #e4e4ed; padding: 20px;
+}
+
+.picarraybg{
+	background-color: #e4e4ed; padding: 20px;
+}
+
+.startpage{
+	margin-top: 80px; margin-bottom: 80px;  width: 100%; padding-top: 50px; padding-bottom: 50px;
+}
+
+.picarray2{
+	display: none;
+	position: absolute;
+	width: 200px;
+	left: -180px;
+	top: 200px;
+	position: fixed;
+}
+
+.picarray2show{
+	left: 50px;
+	transition-duration: .3s;
+	z-index: 999;
+	background: white;
+	opacity: .9;
+	/*padding-right:  20px;*/
+}
+
+.picarray2div{
+	margin-bottom: 5px;
+	padding: 4px;
+	padding-top: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.bg2_2{display: none;}
+
+.content{
+	width: 100%; margin-left: auto; margin-right: auto; 
+	/*position: absolute;*/
+	text-align: center;
+	margin-top: 1000px;
+}
+
+.contentimg{
+	width: 25%; margin-left: auto; margin-right: auto; 
+	/*position: absolute;*/
+	box-shadow: 0 0 0px 25px #f7f0f5;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+
+.flowerimg{
+	width: 100%; top:0; left:0;  opacity: .2; position: absolute; z-index: -3;  object-fit: cover; height: 1500px;
+
+}
+
+.contenttitle{
+	width: 100%; text-align: center;
+	font-size: 70px;
+	margin-bottom: 200px;
+	padding-top: 100px;
+
+}
+
+.flexbox{
+	display: flex; align-items: baseline;
+	align-items: left;
+	align-content: flex-start;
+  justify-content: left;
+}
+
+.introwords{
+	display: none;
+}
+
+.menubutton{
+	/*display: none;*/
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #6b6a51;
+  padding: 5px;
+  opacity: .5;
+  padding-left: 20px;
+  z-index: 999;
+}
+
+.gendesarea{
+	margin-bottom: 500px;
+}
+
+@media screen and (max-width:800px){
+	.secbg {top: 30px; left: 20px; height: 800px;}
+	.photowords {font-size: 15px; top: 40%;}
+	.starttitle {font-size: 40px; text-align: right; width: 200px; position: absolute; right: 30; top: 50;}
+	.picarraybg {padding: 3px;display: none;}
+	.picarray2 {display: block;}
+	.startpage {padding-top: 20px; }
+	.picarray {}
+	.secbgborder {top: 40px; left: 30px; border-width: 5px; height: 800px; border-top-width: 130px;}
+	.bg2_2{display: block;}
+	.flowerimg{height: 830px;}
+	.content{width: 100%;}
+	.contentimg{width: 80%; box-shadow: 0 0 0px 20px #f7f0f5; margin-bottom: 50px;}
+	.contenttitle{font-size: 40px; margin-bottom: 50px;}
+	.flexbox{display: block;}
+	.introwords{display: block; opacity: 0.5; display: absolute; margin-top: 90px; margin-left: 50px; font-size: 20px; width: 85%; z-index: -100;}
+	.menubutton{display: block; }
+	.genderarea{margin-bottom: 500px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div style="">
+	<div id="secbg" class="secbg" style="">
+		<img src="pic/texture1.jpg" style="width: 100%; height: 100%; opacity: .3;">
+	</div>
+
+	<img src="pic/flower.jpeg" style="" class="flowerimg">
+	<!-- <img class="bg2_2" src="pic/flower.jpeg" style="width: 100%; top:500; left:0;  opacity: .5; position: fixed; z-index: -4;  "> -->
+
+	<div id="secbg" class="secbgborder" style="">
+		
+	</div>
+
+	<!-- background: #E7E7E7; -->
+
+
+
+	<div id="startpage" class="startpage" style="">
+
+
+		
+	<div id="picarray" style="" class="picarray">
+		<h1 class="starttitle">EVIAN LAI</h1>
+		<div class=" menubutton" id="menubutton">
+			<i onclick="showmenu()" class="material-icons" style="font-size: 40px;">menu</i>
+		</div>
+		<div class="picarray2" id="picarray2">
+			<!-- <div style="background: #ddd3e0" class="picarray2div">Introduction</div> -->
+			<div style="background: #d1b6e4" class="picarray2div">Inspiration</div>
+			<div style="background: #e4d67c" class="picarray2div">Natural Dye</div>
+			<div style="background: #bfdf8e" class="picarray2div">Beading</div>
+			<div style="background: #d1b6e4" class="picarray2div">Blind Stitch</div>
+			<div style="background: #ddd3e0" class="picarray2div">CAD</div>
+			<div style="background: #e4d67c" class="picarray2div">Weaving</div>
+			<div style="background: #bfdf8e" class="picarray2div">Collaboration</div>
+			<div style="background: #d1b6e4" class="picarray2div">Contact</div>
+
+		</div>
+
+		<div id="picarray1" class="picarraybg" style="">
+
+			<div class="row" >
+
+			  <div class="column">
+			  	<div style="" class="photowords">Introduction</div>
+			    <img src="pic/1.jpeg" style="width:100%"> 
+			  </div>
+			  
+			  <div class="column">
+			  	<div style="" class="photowords">Inspiration</div>
+			    <img src="pic/2.jpeg"  style="width:100%">
+			  </div>
+			
+			  <div class="column">
+			  	<div style="" class="photowords">Natural Dye</div>
+			    <img src="pic/3.jpeg"  style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			  	<div style="" class="photowords">Beading</div>
+			    <img src="pic/4.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Blind Stitch</div>
+			    <img src="pic/5.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">CAD</div>
+			    <img src="pic/6.jpeg" style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			  	<div style="" class="photowords">Weaving</div>
+			    <img src="pic/7.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Collaboration</div>
+			    <img src="pic/8.jpeg"  style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Contact</div>
+			    <img src="pic/9.jpeg" style="width:100%">
+			  </div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="introwords">
+		‘Seek What sets your soul on fire’<br>
+		<br>
+		A London based Hong Kong Fashion Textile designer. Studying in University the Arts of London -London college of Fashion (LCF) <br>
+		Fashion textile: Embroidery. <br>
+		Specializing in Beading and Blind stitch<br>
+		Having keen eye on attention to details, a touch of feminine vibe and sense of aesthetic. <br>
+		<br>
+		‘People will stare. Make it worth their While’ -Harry Winston<br>
+
+	</div>
+
+	<div class="content">
+		
+		<h1 class="contenttitle"></h1>
+		<div id="gendesarea" class="gendesarea"></div>
+		<div id="genpicarea"></div>
+		
+	<!-- 	<div class="flexbox">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+		</div>
+		<div class="flexbox">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+		</div>
+		<div class="flexbox">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+		</div> -->
+	</div>
+
+
+
+	</div>
+</div>
+
+<script>
+window.onscroll = function() {myScrollFunction()};
+
+var navbar = document.getElementById("menubutton");
+var sticky = 120;//navbar.offsetTop;
+
+function myScrollFunction() {
+	// console.log(window.pageYOffset)
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script type="text/javascript">
+
+	function startfunc() {
+		var allbox = document.getElementsByClassName('column');
+		for (var j=0; j<allbox.length; j++){
+			allbox[j].getElementsByClassName('photowords')[0].hidden = true;
+			allbox[j].onmouseover = function(){
+				this.getElementsByClassName('photowords')[0].hidden = false;
+			}
+			allbox[j].onmouseout = function(){
+				this.getElementsByClassName('photowords')[0].hidden = true;
+			}
+			allbox[j].onclick = function(){
+				nextpage(this.getElementsByClassName('photowords')[0].innerHTML);
+			}
+		}
+
+		var allbox2 = document.getElementsByClassName('picarray2div');
+		for (var j=0; j<allbox2.length; j++){
+			allbox2[j].onclick = function(){
+				nextpage(this.innerHTML);
+			}
+		}
+
+	}
+	startfunc();
+
+	function nextpage(x){
+		// console.log(x);
+		document.getElementsByClassName('contenttitle')[0].innerHTML = x;
+		document.getElementById('genpicarea').innerHTML = '';
+		document.getElementById('gendesarea').innerHTML = '';
+		if (imglist[x].url){
+			var temphtml = '';
+			for (var j=0; j<imglist[x].url.length; j++){
+				if (j%3==0){
+					if (j!=0){
+						temphtml+='</div>';
+						document.getElementById('genpicarea').innerHTML += temphtml;
+					}
+					
+					temphtml = '<div class="flexbox">';
+				}
+				temphtml+='<img class="contentimg" src="'+imglist[x].url[j]+'">';
+				// console.log(temphtml)
+			}
+			if (temphtml)
+				document.getElementById('genpicarea').innerHTML += '</div>'+temphtml;
+		}
+		// console.log(imglist[x].url[0]);
+		if (imglist[x].description){
+			document.getElementById('gendesarea').innerHTML = imglist[x].description;
+		}
+		document.getElementsByClassName('contenttitle')[0].scrollIntoView();
+		if (document.getElementById("picarray2").classList.contains('picarray2show'))
+			document.getElementById("picarray2").classList.remove('picarray2show')
+
+	}
+
+	function showmenu() {
+		if (screen.width<=800){
+			if (document.getElementById("picarray2").classList.contains('picarray2show'))
+				document.getElementById("picarray2").classList.remove('picarray2show')
+			else
+				document.getElementById("picarray2").classList.add('picarray2show')
+		} else {
+			document.body.scrollIntoView();
+		}
+		
+		
+	}
+
+</script>
+
+</body>
+</html>
