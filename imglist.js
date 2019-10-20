@@ -17,7 +17,8 @@ var imglist = {
 	"Blind Stitch" : {
 		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
 		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		     "https://i.pinimg.com/originals/48/13/e1/4813e1629998d432bf75497e1ec221e6.jpg"], 
+		     "https://i.pinimg.com/originals/48/13/e1/4813e1629998d432bf75497e1ec221e6.jpg",
+		     "https://i.pinimg.com/originals/04/54/dd/0454ddb02a32b7df2a8627dba29ce9d4.jpg"], 
 		description: "asdf<br>fdsa"
 	},
 	"CAD" : {
@@ -26,7 +27,7 @@ var imglist = {
 	},
 	"Weaving" : {
 		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
-		description: "asdf"
+		description: "<br>Dyeing 100%cotton fabric with natural plants, <br>Coffee<br>Spinach<br>Purple Dragon Fruit<br>Isatidis Radix<br>soon use the fabrice stripes to weave into garment. The whole process is seamless, which is a way to convey the idea of sustainable fashion ,the garment might fully dissolved into the soil after ages without any damage to the planet.   "
 	},
 	"Collaboration" : {
 		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg","https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
