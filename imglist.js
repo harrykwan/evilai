@@ -10,21 +10,36 @@ var imglist = {
 		description: "asdf"
 	},
 	"Natural Dye" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
+		url: ["https://i.pinimg.com/originals/49/79/75/497975a457148d3e38fd96bb529fcd57.jpg",
+		      "https://i.pinimg.com/originals/74/7c/4c/747c4cc4a5e74a00720b84293d8214ae.jpg",
+		      "https://i.pinimg.com/originals/81/0d/56/810d56e0ffb4cddb2113874daf2b64ae.jpg",
+		      "https://i.pinimg.com/originals/33/dd/94/33dd94eb68ab93b7805d6b51a703420a.jpg",
+		      "https://i.pinimg.com/originals/ec/25/5e/ec255ed86cf3f09afee2c5280d6dff84.jpg",
+		      "https://i.pinimg.com/originals/d2/03/ca/d203cab2b02faa20f7c001f8f2a768ad.jpg",
+		      "https://i.pinimg.com/originals/42/14/81/421481360c13d9dd572c7fc281cddb1b.jpg",
+		      "https://i.pinimg.com/originals/24/1b/fc/241bfc8d46d4813afa9db7678c7a16a2.jpg",
+		      "https://i.pinimg.com/originals/09/74/08/0974088c16a163b114784067ccbfcb38.jpg",
+		      "https://i.pinimg.com/originals/3d/ee/60/3dee60e026dc5a585239860761cd195e.jpg",], 
 		description: "asdf"
 	},
 	"Beading" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
+		url: ["https://i.pinimg.com/originals/c2/74/ac/c274ac63b7126e477363f8dd43cd80f7.jpg",
+		      "https://i.pinimg.com/originals/15/f0/77/15f077dfc3b6a4151e495d1ee02e843d.jpg",
+		      "https://i.pinimg.com/originals/62/c9/6b/62c96bb6eaf56787d235389731559936.jpg",
+		      "https://i.pinimg.com/originals/6a/c3/46/6ac3469fde2feee288c379b3df628cb8.jpg",
+		      "https://i.pinimg.com/originals/12/73/8b/12738be7eb145d9b98b5fea553ad18fa.jpg",
+		      "https://i.pinimg.com/originals/27/8b/90/278b90391b356b4b1efd132944e6049f.jpg",
+		      "https://i.pinimg.com/originals/2e/a3/b6/2ea3b6cde47f10772d57972eabafa87f.jpg",
+		      "https://i.pinimg.com/originals/56/cc/37/56cc37e25d5264e3faa7fd89d4d9a8ac.jpg"], 
 		description: "asdf"
 	},
 	"Blind Stitch" : {
 		url: ["https://i.pinimg.com/originals/93/a6/16/93a6163ab4d04022549c6ba5147c87e3.jpg",
 		      "https://i.pinimg.com/originals/fa/08/ec/fa08ec1e0d056452b1bdbe1841137ed5.jpg",
 		      "https://i.pinimg.com/originals/0f/a4/c0/0fa4c02bda65d6388950196b161801d9.jpg",
-		      "https://i.pinimg.com/originals/47/19/76/4719763849a8776e96e0288e3fbdf380.jpg",
-		      "<br><br>","https://i.pinimg.com/originals/11/17/b8/1117b8aec2eadc52ddee2085bd0d11f6.jpg",
+		      "https://i.pinimg.com/originals/47/19/76/4719763849a8776e96e0288e3fbdf380.jpg"],
+	        
+		      "<br>",["https://i.pinimg.com/originals/11/17/b8/1117b8aec2eadc52ddee2085bd0d11f6.jpg",
 		      "https://i.pinimg.com/originals/fc/58/de/fc58def8c48599a95e5d54123dc42340.jpg",
 		      "https://i.pinimg.com/originals/65/73/f9/6573f934ef59428385b04b39a9ef2c11.jpg",
 		      "https://i.pinimg.com/originals/a1/ca/d6/a1cad654b9047002cd78a5e369368013.jpg",
