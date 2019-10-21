@@ -47,7 +47,7 @@ var imglist = {
 		      "https://i.pinimg.com/originals/b9/42/2d/b9422d2e604401c7403b7428b2364fb6.jpg",
 		      "https://i.pinimg.com/originals/3b/7c/8d/3b7c8d3be23b594b43a1e226d356dcd9.jpg",
 		      "https://i.pinimg.com/originals/35/dc/6b/35dc6b442d576f488d275e3bd20631e6.jpg"], 
-		description: " Collaboration project<br>Bespoke tailoring : Michael WANG<br>Fashion Textile : Evian LAI<br>Model :Denny SHU <br>“I may not me free, but I’m not about to surrender the illusion of choice” -Jonny Rich<br>A symbolisation of the predetermined lifestyle under Asian parenting ,imitating the restrictive predetermined life of a cocoon, yet the next generations are going to inherit this lifestyle<br>Technique used:<br>Blind stitch <br>Canadian Smocking "
+		description: " Collaboration project<br>Bespoke tailoring : Michael WANG<br>Fashion Textile : Evian LAI<br>Model :Denny SHU <br>“I may not be free, but I’m not about to surrender the illusion of choice” -Jonny Rich<br>A symbolisation of the predetermined lifestyle under Asian parenting ,imitating the restrictive predetermined life of a cocoon, yet the next generations are going to inherit this lifestyle<br>Technique used:<br>Blind stitch <br>Canadian Smocking "
 	},
 	"CAD" : {
 		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
