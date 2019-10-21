@@ -37,9 +37,8 @@ var imglist = {
 		url: ["https://i.pinimg.com/originals/93/a6/16/93a6163ab4d04022549c6ba5147c87e3.jpg",
 		      "https://i.pinimg.com/originals/fa/08/ec/fa08ec1e0d056452b1bdbe1841137ed5.jpg",
 		      "https://i.pinimg.com/originals/0f/a4/c0/0fa4c02bda65d6388950196b161801d9.jpg",
-		      "https://i.pinimg.com/originals/47/19/76/4719763849a8776e96e0288e3fbdf380.jpg"],
-	        
-		      "<br>",["https://i.pinimg.com/originals/11/17/b8/1117b8aec2eadc52ddee2085bd0d11f6.jpg",
+		      "https://i.pinimg.com/originals/47/19/76/4719763849a8776e96e0288e3fbdf380.jpg",
+	              "https://i.pinimg.com/originals/11/17/b8/1117b8aec2eadc52ddee2085bd0d11f6.jpg",
 		      "https://i.pinimg.com/originals/fc/58/de/fc58def8c48599a95e5d54123dc42340.jpg",
 		      "https://i.pinimg.com/originals/65/73/f9/6573f934ef59428385b04b39a9ef2c11.jpg",
 		      "https://i.pinimg.com/originals/a1/ca/d6/a1cad654b9047002cd78a5e369368013.jpg",
