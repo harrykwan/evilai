@@ -62,8 +62,24 @@ var imglist = {
 		description: "<br>Dye 100%cotton with natural plants, <br>Coffee,Spinach,Purple Dragon Fruit,Isatidis Radix, <br> ripped into stripes,weave them into garment,is a way to convey the idea of sustainability, while it cause no damage for the planet after dissolving into soil"
 	},
 	"Collaboration" : {
-		url: ["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"], 
+		url: ["https://i.pinimg.com/originals/2f/4e/27/2f4e279a12d2a189ae4d739e3d398f09.jpg",
+		      "https://i.pinimg.com/originals/ed/b6/7b/edb67b7768cf4ea2850d71d09890bda1.jpg",
+		      "https://i.pinimg.com/originals/56/3a/98/563a98ee66beb209be6faad3181713ca.jpg",
+		      "https://i.pinimg.com/originals/bf/ed/d7/bfedd78357313858a6e343bab3618fba.jpg",
+		      "https://i.pinimg.com/originals/e6/68/1d/e6681d2d8c42043f0b8d9d5cf9f624af.jpg",
+		      "https://i.pinimg.com/originals/81/8d/05/818d051bb0993dcee438e74e3b358825.jpg",
+		      "https://i.pinimg.com/originals/fa/37/60/fa3760560a96af26284e3643dba1e7a7.jpg",
+		      "https://i.pinimg.com/originals/96/76/47/96764745f4c3cb49fe1ee636ffb67851.jpg",
+		      "https://i.pinimg.com/originals/a6/c9/1f/a6c91f80bfdd5259175c38d747d8b744.jpg",
+		      "https://i.pinimg.com/originals/07/67/02/076702ad9ae80abd9b9c6d4a058b1be8.jpg",
+		      "https://i.pinimg.com/originals/d8/b7/19/d8b719c69210f65081675d2999c407f2.jpg",
+		      "https://i.pinimg.com/originals/03/b9/d7/03b9d779d63cd736c2311204e38227dd.jpg",
+		      "https://i.pinimg.com/originals/76/14/5b/76145b5c2f338c3102657fa49c4c5cb9.jpg",
+		      "https://i.pinimg.com/originals/8a/54/78/8a5478bf6e46b912b66c3c3c170c81f9.jpg",
+		      "https://i.pinimg.com/originals/09/ff/97/09ff97ef676fa6184b351db4a2f61376.jpg",
+		      "https://i.pinimg.com/originals/9e/01/cd/9e01cd61a77abf4187d9dc2217b4deca.jpg",
+		      "https://i.pinimg.com/originals/f1/85/3e/f1853e34d8d64b72c4e090c2da34fcd9.jpg",
+		      "https://i.pinimg.com/originals/18/5b/9e/185b9e455163d232a638810fbf49ef07.jpg"], 
 		description: "asdf"
 	},
 	"Contact" : {
