@@ -1,89 +1,471 @@
-var imglist = {
-	"Introduction" : {
-		description: ["‘Seek What sets your soul on fire’<br>			<br>			A London based Hong Kong Fashion Textile designer. Studying in University the Arts of London -London college of Fashion (LCF) <br>			Fashion textile: Embroidery. <br>			Specializing in Beading and Blind stitch<br>			Having keen eye on attention to details, a touch of feminine vibe and sense of aesthetic. <br>			<br>			‘People will stare. Make it worth their While’ -Harry Winston<br>"]	},
-	"Inspiration" : {
-		url: [["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/5b/5b/41/5b5b41caefe28908f5e124c26b0f5431.jpg",
-		      "https://i.pinimg.com/originals/c7/e5/07/c7e5075308961f39854a631241eb4c7e.jpg"]], 
-		description: ["asdf"]
-	},
-	"Natural Dye" : {
-		url: [["https://i.pinimg.com/originals/49/79/75/497975a457148d3e38fd96bb529fcd57.jpg",
-		      "https://i.pinimg.com/originals/74/7c/4c/747c4cc4a5e74a00720b84293d8214ae.jpg",
-		      "https://i.pinimg.com/originals/81/0d/56/810d56e0ffb4cddb2113874daf2b64ae.jpg",
-		      "https://i.pinimg.com/originals/33/dd/94/33dd94eb68ab93b7805d6b51a703420a.jpg",
-		      "https://i.pinimg.com/originals/ec/25/5e/ec255ed86cf3f09afee2c5280d6dff84.jpg",
-		      "https://i.pinimg.com/originals/d2/03/ca/d203cab2b02faa20f7c001f8f2a768ad.jpg",
-		      "https://i.pinimg.com/originals/42/14/81/421481360c13d9dd572c7fc281cddb1b.jpg",
-		      "https://i.pinimg.com/originals/24/1b/fc/241bfc8d46d4813afa9db7678c7a16a2.jpg",
-		      "https://i.pinimg.com/originals/09/74/08/0974088c16a163b114784067ccbfcb38.jpg",
-		      "https://i.pinimg.com/originals/3d/ee/60/3dee60e026dc5a585239860761cd195e.jpg"]], 
-		description: ["asdf"]
-	},
-	"Beading" : {
-		url: [["https://i.pinimg.com/originals/c2/74/ac/c274ac63b7126e477363f8dd43cd80f7.jpg",
-		      "https://i.pinimg.com/originals/15/f0/77/15f077dfc3b6a4151e495d1ee02e843d.jpg",
-		      "https://i.pinimg.com/originals/62/c9/6b/62c96bb6eaf56787d235389731559936.jpg",
-		      "https://i.pinimg.com/originals/6a/c3/46/6ac3469fde2feee288c379b3df628cb8.jpg",
-		      "https://i.pinimg.com/originals/12/73/8b/12738be7eb145d9b98b5fea553ad18fa.jpg",
-		      "https://i.pinimg.com/originals/27/8b/90/278b90391b356b4b1efd132944e6049f.jpg",
-		      "https://i.pinimg.com/originals/2e/a3/b6/2ea3b6cde47f10772d57972eabafa87f.jpg",
-		      "https://i.pinimg.com/originals/56/cc/37/56cc37e25d5264e3faa7fd89d4d9a8ac.jpg"]], 
-		description: ["asdf"]
-	},
-	"Blind Stitch" : {
-		url: [["https://i.pinimg.com/originals/93/a6/16/93a6163ab4d04022549c6ba5147c87e3.jpg",
-		      "https://i.pinimg.com/originals/fa/08/ec/fa08ec1e0d056452b1bdbe1841137ed5.jpg",
-		      "https://i.pinimg.com/originals/0f/a4/c0/0fa4c02bda65d6388950196b161801d9.jpg",
-			  "https://i.pinimg.com/originals/47/19/76/4719763849a8776e96e0288e3fbdf380.jpg"],
-
-			  ["https://i.pinimg.com/originals/11/17/b8/1117b8aec2eadc52ddee2085bd0d11f6.jpg",
-		      "https://i.pinimg.com/originals/fc/58/de/fc58def8c48599a95e5d54123dc42340.jpg",
-		      "https://i.pinimg.com/originals/65/73/f9/6573f934ef59428385b04b39a9ef2c11.jpg",
-		      "https://i.pinimg.com/originals/a1/ca/d6/a1cad654b9047002cd78a5e369368013.jpg",
-		      "https://i.pinimg.com/originals/11/bf/5d/11bf5dbceff4c426d2262e4a9212315a.jpg",
-		      "https://i.pinimg.com/originals/b9/42/2d/b9422d2e604401c7403b7428b2364fb6.jpg",
-		      "https://i.pinimg.com/originals/3b/7c/8d/3b7c8d3be23b594b43a1e226d356dcd9.jpg",
-		      "https://i.pinimg.com/originals/35/dc/6b/35dc6b442d576f488d275e3bd20631e6.jpg"]], 
-		description: [" Collaboration project<br>Bespoke tailoring : Michael WANG<br>Fashion Textile : Evian LAI<br>Model :Denny SHU <br>“I may not be free, but I’m not about to surrender the illusion of choice” -Jonny Rich<br>A symbolisation of the predetermined lifestyle under Asian parenting ,imitating the restrictive predetermined life of a cocoon, yet the next generations are going to inherit this lifestyle<br>Technique used:<br>Blind stitch <br>Canadian Smocking ",
-					"asdfasdf sec description"]
-	},
-	"CAD" : {
-		url: [["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"]], 
-		description: ["asdf"]
-	},
-	"Weaving" : {
-		url: [["https://i.pinimg.com/originals/04/77/41/04774175b627cadbd8f83df80bfb3bcd.jpg",
-		      "https://i.pinimg.com/originals/fc/77/02/fc77023dd24a253fd1e81fd7ef11bf6d.jpg",
-		     "https://i.pinimg.com/originals/01/96/b4/0196b4c18c10c0e28d68ae7e8a038686.jpg",
-		     "https://i.pinimg.com/originals/b3/32/33/b3323375de318df8ae7294d44b92cab3.jpg",
-                     "https://i.pinimg.com/originals/cc/33/dd/cc33dde79d3291a3f83747f93352afa7.jpg"]], 
-		description: ["<br>Dye 100%cotton with natural plants, <br>Coffee,Spinach,Purple Dragon Fruit,Isatidis Radix, <br> ripped into stripes,weave them into garment,is a way to convey the idea of sustainability, while it cause no damage for the planet after dissolving into soil"]
-	},
-	"Collaboration" : {
-		url: [["https://i.pinimg.com/originals/2f/4e/27/2f4e279a12d2a189ae4d739e3d398f09.jpg",
-		      "https://i.pinimg.com/originals/ed/b6/7b/edb67b7768cf4ea2850d71d09890bda1.jpg",
-		      "https://i.pinimg.com/originals/56/3a/98/563a98ee66beb209be6faad3181713ca.jpg",
-		      "https://i.pinimg.com/originals/bf/ed/d7/bfedd78357313858a6e343bab3618fba.jpg",
-		      "https://i.pinimg.com/originals/e6/68/1d/e6681d2d8c42043f0b8d9d5cf9f624af.jpg",
-		      "https://i.pinimg.com/originals/81/8d/05/818d051bb0993dcee438e74e3b358825.jpg",
-		      "https://i.pinimg.com/originals/fa/37/60/fa3760560a96af26284e3643dba1e7a7.jpg",
-		      "https://i.pinimg.com/originals/96/76/47/96764745f4c3cb49fe1ee636ffb67851.jpg",
-		      "https://i.pinimg.com/originals/a6/c9/1f/a6c91f80bfdd5259175c38d747d8b744.jpg",
-		      "https://i.pinimg.com/originals/07/67/02/076702ad9ae80abd9b9c6d4a058b1be8.jpg",
-		      "https://i.pinimg.com/originals/d8/b7/19/d8b719c69210f65081675d2999c407f2.jpg",
-		      "https://i.pinimg.com/originals/03/b9/d7/03b9d779d63cd736c2311204e38227dd.jpg",
-		      "https://i.pinimg.com/originals/76/14/5b/76145b5c2f338c3102657fa49c4c5cb9.jpg",
-		      "https://i.pinimg.com/originals/8a/54/78/8a5478bf6e46b912b66c3c3c170c81f9.jpg",
-		      "https://i.pinimg.com/originals/09/ff/97/09ff97ef676fa6184b351db4a2f61376.jpg",
-		      "https://i.pinimg.com/originals/9e/01/cd/9e01cd61a77abf4187d9dc2217b4deca.jpg",
-		      "https://i.pinimg.com/originals/f1/85/3e/f1853e34d8d64b72c4e090c2da34fcd9.jpg",
-		      "https://i.pinimg.com/originals/18/5b/9e/185b9e455163d232a638810fbf49ef07.jpg"]], 
-		description: ["asdf"]
-	},
-	"Contact" : {
-		description: ["asdf"]
-	}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="imglist.js"></script>
+<style>
+* {
+box-sizing: border-box;
 }
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	perspective: 1000;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.column:hover{
+
+	/*transform: rotateY(180deg);*/
+	transition: transform 0s;
+}
+
+
+.column>img{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.column>img:hover{
+	opacity: 0.3;
+	filter: blur(3px);
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.photowords{
+	font-size: 30px;
+	position: absolute; 
+	top: 45%;
+	left: 0;
+	/*left: 15%;*/
+	width: 100%;
+	text-align: center;
+	color: #6a6a75;
+	/*color: #b4b4cf;*/
+	/*text-shadow: 0 0 3px black;*/
+	z-index: -1;
+	color: black;
+	opacity: 0.7;
+}
+
+
+
+
+.starttitle{
+	 text-align: left; font-size: 70px;
+}
+
+body{
+	background-color: /*#CFCFDD;*//*#E7E7E7*/#fffaf0;
+	font-family: 'Josefin Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+.secbg{
+	background: #b4b4cf; background: #f7f0f5; width: 100%; height: 100%; position: absolute; z-index: -1; top: 30px; left: 30px; height: 1500px; opacity: 0.7;
+}
+
+.secbgborder{
+	background: none; width: 100%; height: 100%; position: absolute; z-index: -1;  height: 1500px;
+	border: 20px solid #6b6a51; opacity: .3; top: 60px; left: 60px; border-top-width: 200px;
+}
+
+.picarray{
+	width: 70%; margin-left: auto; margin-right: auto; color: #fffaf0; font-size: 25px;
+	max-width: 1000px;
+}
+
+.picarraybg{
+	background-color: #e4e4ed; padding: 20px;
+}
+
+.picarraybg{
+	background-color: #e4e4ed; padding: 20px;
+}
+
+.startpage{
+	margin-top: 80px; margin-bottom: 80px;  width: 100%; padding-top: 50px; padding-bottom: 50px;
+}
+
+.picarray2{
+	display: none;
+	position: absolute;
+	width: 200px;
+	left: -180px;
+	top: 200px;
+	position: fixed;
+}
+
+.picarray2show{
+	left: 50px;
+	transition-duration: .3s;
+	z-index: 999;
+	background: white;
+	opacity: .9;
+	/*padding-right:  20px;*/
+}
+
+.picarray2div{
+	margin-bottom: 5px;
+	padding: 4px;
+	padding-top: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.bg2_2{display: none;}
+
+.content{
+	width: 100%; margin-left: auto; margin-right: auto; 
+	/*position: absolute;*/
+	text-align: center;
+	margin-top: 1000px;
+}
+
+.contentimg{
+	width: 25%; margin-left: auto; margin-right: auto; 
+	/*position: absolute;*/
+	box-shadow: 0 0 0px 25px #f7f0f5;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+
+.flowerimg{
+	width: 100%; top:0; left:0;  opacity: .2; position: absolute; z-index: -3;  object-fit: cover; height: 1500px;
+
+}
+
+.contenttitle{
+	width: 100%; text-align: center;
+	font-size: 70px;
+	margin-bottom: 200px;
+	padding-top: 100px;
+
+}
+
+.flexbox{
+	display: flex; align-items: baseline;
+	align-items: left;
+	align-content: flex-start;
+  justify-content: left;
+}
+
+.introwords{
+	display: none;
+}
+
+.menubutton{
+	/*display: none;*/
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #6b6a51;
+  padding: 5px;
+  opacity: .5;
+  padding-left: 20px;
+  z-index: 999;
+}
+
+.gendesarea{
+	margin-bottom: 300px;
+	padding-left: 15%;
+	padding-right: 15%;
+	opacity: .6;
+}
+
+/*.navbutton{
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	display: none;
+	background: black;
+	z-index: 1000;
+}
+
+.shownavbutton{
+	display: block;
+}*/
+
+@media screen and (max-width:800px){
+	.secbg {top: 30px; left: 20px; height: 800px;}
+	.photowords {font-size: 15px; top: 40%;}
+	.starttitle {font-size: 40px; text-align: right; width: 200px; position: absolute; right: 50; top: 50;}
+	.picarraybg {padding: 3px;display: none;}
+	.picarray2 {display: block;}
+	.startpage {padding-top: 20px; }
+	.picarray {}
+	.secbgborder {top: 40px; left: 30px; border-width: 5px; height: 800px; border-top-width: 130px;}
+	.bg2_2{display: block;}
+	.flowerimg{height: 830px;}
+	.content{width: 100%;}
+	.contentimg{width: 80%; box-shadow: 0 0 0px 20px #f7f0f5; margin-bottom: 50px;}
+	.contenttitle{font-size: 40px; margin-bottom: 50px;}
+	.flexbox{display: block;}
+	.introwords{display: block; opacity: 0.5; display: absolute; margin-top: 90px; margin-left: 50px; font-size: 20px; width: 85%; z-index: -100;}
+	.menubutton{display: block; }
+	.genderarea{margin-bottom: 0px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div style="">
+	
+	<div id="secbg" class="secbg" style="">
+		<img src="pic/texture1.jpg" style="width: 100%; height: 100%; opacity: .3;">
+	</div>
+
+	<img src="pic/flower.jpeg" style="" class="flowerimg">
+	<!-- <img class="bg2_2" src="pic/flower.jpeg" style="width: 100%; top:500; left:0;  opacity: .5; position: fixed; z-index: -4;  "> -->
+
+	<div id="secbg" class="secbgborder" style="">
+		
+	</div>
+
+	<!-- background: #E7E7E7; -->
+
+
+
+	<div id="startpage" class="startpage" style="">
+
+
+		
+	<div id="picarray" style="" class="picarray">
+		<h1 class="starttitle">EVIAN LAI</h1>
+		<div class=" menubutton" id="menubutton">
+			<i onclick="showmenu()" class="material-icons" style="font-size: 40px;">menu</i>
+		</div>
+		<div class="picarray2" id="picarray2">
+			<!-- <div style="background: #ddd3e0" class="picarray2div">Introduction</div> -->
+			<div style="background: #d1b6e4" class="picarray2div">Inspiration</div>
+			<div style="background: #e4d67c" class="picarray2div">Natural Dye</div>
+			<div style="background: #bfdf8e" class="picarray2div">Beading</div>
+			<div style="background: #d1b6e4" class="picarray2div">Blind Stitch</div>
+			<div style="background: #ddd3e0" class="picarray2div">CAD</div>
+			<div style="background: #e4d67c" class="picarray2div">Weaving</div>
+			<div style="background: #bfdf8e" class="picarray2div">Collaboration</div>
+			<div style="background: #d1b6e4" class="picarray2div">Contact</div>
+
+		</div>
+
+		<div id="picarray1" class="picarraybg" style="">
+
+			<div class="row" >
+
+			  <div class="column">
+			  	<div style="" class="photowords">Introduction</div>
+			    <img src="pic/1.jpeg" style="width:100%"> 
+			  </div>
+			  
+			  <div class="column">
+			  	<div style="" class="photowords">Inspiration</div>
+			    <img src="pic/2.jpeg"  style="width:100%">
+			  </div>
+			
+			  <div class="column">
+			  	<div style="" class="photowords">Natural Dye</div>
+			    <img src="pic/3.jpeg"  style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			  	<div style="" class="photowords">Beading</div>
+			    <img src="pic/4.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Blind Stitch</div>
+			    <img src="pic/5.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">CAD</div>
+			    <img src="pic/6.jpeg" style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			  	<div style="" class="photowords">Weaving</div>
+			    <img src="pic/7.jpeg" style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Collaboration</div>
+			    <img src="pic/8.jpeg"  style="width:100%">
+			  </div>
+			  <div class="column">
+			  	<div style="" class="photowords">Contact</div>
+			    <img src="pic/9.jpeg" style="width:100%">
+			  </div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="introwords">
+		‘Seek What sets your soul on fire’<br>
+		<br>
+		A London based Hong Kong Fashion Textile designer. Studying in University the Arts of London -London college of Fashion (LCF) <br>
+		Fashion textile: Embroidery. <br>
+		Specializing in Beading and Blind stitch<br>
+		Having keen eye on attention to details, a touch of feminine vibe and sense of aesthetic. <br>
+		<br>
+		‘People will stare. Make it worth their While’ -Harry Winston<br>
+
+	</div>
+
+	<div class="content">
+		
+		<h1 class="contenttitle"></h1>
+		<div id="gendesarea" class="gendesarea"></div>
+		<div id="genpicarea"></div>
+		
+	<!-- 	<div class="flexbox">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+		</div>
+		<div class="flexbox">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+		</div>
+		<div class="flexbox">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+			<img class="contentimg" src="https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg">
+		</div> -->
+	</div>
+
+
+
+	</div>
+</div>
+
+<script>
+window.onscroll = function() {myScrollFunction()};
+
+var navbar = document.getElementById("menubutton");
+// var navbutton = document.getElementById("navbutton");
+var sticky = 120;//navbar.offsetTop;
+
+function myScrollFunction() {
+	// console.log(window.pageYOffset)
+  if (window.pageYOffset >= sticky) {
+  	if (screen.width>800)
+  		navbar.getElementsByTagName('i')[0].innerHTML = "eject";
+    navbar.classList.add("sticky")
+    
+  } else {
+  	// if (screen.width>800)
+  		navbar.getElementsByTagName('i')[0].innerHTML = "menu";
+    navbar.classList.remove("sticky");
+
+  }
+}
+</script>
+
+<script type="text/javascript">
+
+	function startfunc() {
+		var allbox = document.getElementsByClassName('column');
+		for (var j=0; j<allbox.length; j++){
+			allbox[j].getElementsByClassName('photowords')[0].hidden = true;
+			allbox[j].onmouseover = function(){
+				this.getElementsByClassName('photowords')[0].hidden = false;
+			}
+			allbox[j].onmouseout = function(){
+				this.getElementsByClassName('photowords')[0].hidden = true;
+			}
+			allbox[j].onclick = function(){
+				nextpage(this.getElementsByClassName('photowords')[0].innerHTML);
+			}
+		}
+
+		var allbox2 = document.getElementsByClassName('picarray2div');
+		for (var j=0; j<allbox2.length; j++){
+			allbox2[j].onclick = function(){
+				nextpage(this.innerHTML);
+			}
+		}
+
+	}
+	startfunc();
+
+	function nextpage(x){
+		// console.log(x);
+		document.getElementsByClassName('contenttitle')[0].innerHTML = x;
+		document.getElementById('genpicarea').innerHTML = '';
+		document.getElementById('gendesarea').innerHTML = '';
+
+		if (imglist[x].description){
+			// document.getElementById('gendesarea').innerHTML = imglist[x].description;
+			for (var jj=0; jj<imglist[x].description.length; jj++){
+
+				document.getElementById('genpicarea').innerHTML += '<div style="margin:20%">'+imglist[x].description[jj]+'</div>';
+
+				if (imglist[x].url){
+						var temphtml = '';
+						for (var j=0; j<imglist[x].url[jj].length; j++){
+							if (j%3==0){
+								if (j!=0){
+									temphtml+='</div>';
+									document.getElementById('genpicarea').innerHTML += temphtml;
+								}
+								
+								temphtml = '<div class="flexbox">';
+							}
+							temphtml+='<img class="contentimg" src="'+imglist[x].url[jj][j]+'">';
+							// console.log(temphtml)
+						}
+						if (temphtml)
+							document.getElementById('genpicarea').innerHTML += '</div>'+temphtml;
+					
+				}
+
+				
+			}
+			
+		}
+		
+		// console.log(imglist[x].url[0]);
+	
+		document.getElementsByClassName('contenttitle')[0].scrollIntoView();
+		if (document.getElementById("picarray2").classList.contains('picarray2show'))
+			document.getElementById("picarray2").classList.remove('picarray2show')
+
+	}
+
+	function showmenu() {
+		if (screen.width<=800){
+			if (document.getElementById("picarray2").classList.contains('picarray2show'))
+				document.getElementById("picarray2").classList.remove('picarray2show')
+			else
+				document.getElementById("picarray2").classList.add('picarray2show')
+		} else {
+			document.body.scrollIntoView();
+		}
+		
+		
+	}
+
+</script>
+
+</body>
+</html>
