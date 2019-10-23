@@ -50,9 +50,12 @@ var imglist = {
 					"asdfasdf sec description"]
 	},
 	"CAD" : {
-		url: [["https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg",
-		      "https://i.pinimg.com/originals/a5/03/f9/a503f982e78c2e3fb19ff45f9b2125cd.jpg"]], 
-		description: ["asdf"]
+		url: [["https://i.pinimg.com/originals/c4/e6/54/c4e6541cc8d1c553f0d12c1e916a0a04.jpg",
+		      "https://i.pinimg.com/originals/d8/7b/65/d87b656b72b4afa9294fc5f17be0ed1b.jpg",
+		     "https://i.pinimg.com/originals/cb/a2/72/cba272adb41881c3fc2e85a3e64eeda4.jpg",
+		      "https://i.pinimg.com/originals/82/2a/a5/822aa526193a8969655ed365a45a6668.jpg"]
+		     ], 
+		description: ["Digital embroidery machine -CAD with beads embellishment"]
 	},
 	"Weaving" : {
 		url: [["https://i.pinimg.com/originals/04/77/41/04774175b627cadbd8f83df80bfb3bcd.jpg",
